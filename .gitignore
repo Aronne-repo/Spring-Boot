@@ -1,8 +1,21 @@
 HELP.md
+
+# Maven
 target/
 .mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+
+# Logs
+*.log
+spring.log
+
+# Env files
+.env
+
+# OS generated files
+.DS_Store
+Thumbs.db
 
 ### STS ###
 .apt_generated
@@ -14,10 +27,11 @@ target/
 .sts4-cache
 
 ### IntelliJ IDEA ###
-.idea
+.idea/
 *.iws
 *.iml
 *.ipr
+out/
 
 ### NetBeans ###
 /nbproject/private/
