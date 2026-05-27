@@ -1,5 +1,4 @@
 package com.aronnerepo.springboot.entities;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 import java.time.LocalDate;
@@ -30,7 +29,6 @@ public class Author {
 
     private String nationality;
 
-    @JsonIgnore
     @ManyToMany(mappedBy = "authors")
     @Builder.Default
     private Set<Book> books = new HashSet<>();
