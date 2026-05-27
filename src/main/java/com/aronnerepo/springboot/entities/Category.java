@@ -1,5 +1,4 @@
 package com.aronnerepo.springboot.entities;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 import java.util.ArrayList;
@@ -21,7 +20,6 @@ public class Category {
     @Column(nullable = false, unique = true)
     private String name;
 
-    @JsonIgnore
     @OneToMany(mappedBy = "category")
     @Builder.Default
     private List<Book> books = new ArrayList<>();
