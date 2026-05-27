@@ -1,6 +1,6 @@
 -- Tabella autori --
 
-INSERT INTO authors
+INSERT OR IGNORE INTO authors
 (first_name, last_name, birth_date, nationality)
 VALUES
 ('J.R.R.', 'Tolkien', '1892-01-03', 'British'),
@@ -15,7 +15,7 @@ VALUES
 
 -- Tabella libri --
 
-INSERT INTO books
+INSERT OR IGNORE INTO books
 (title, isbn, publication_year, pages, language, category_id)
 VALUES
 ('The Hobbit', '9780261103344', 1937, 310, 'English', 1),
@@ -30,7 +30,7 @@ VALUES
 
 -- Tabella categorie --
 
-INSERT INTO categories
+INSERT OR IGNORE INTO categories
 (name)
 VALUES
 ('Fantasy'),
@@ -46,7 +46,7 @@ VALUES
 
 -- Tabella books_authors --
 
-INSERT INTO books_authors
+INSERT OR IGNORE INTO books_authors
 (book_id, author_id)
 VALUES
 (1, 1),
