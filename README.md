@@ -37,13 +37,13 @@ com.aronnerepo.springboot
 ## API Documentation
 
 Swagger UI is available at:
-
+```
 http://localhost:8080/swagger-ui.html
-
+```
 OpenAPI JSON:
-
+```
 http://localhost:8080/v3/api-docs
-
+```
 ---
 
 ## Database
@@ -60,10 +60,10 @@ library.db
 ## Installation
 
 Clone the repository:
-
+```
 git clone <repository-url>
 cd spring-boot-library
-
+```
 ---
 
 ## Build the project:
