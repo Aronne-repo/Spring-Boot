@@ -111,8 +111,8 @@ Categories (Fantasy, Science Fiction, Programming, etc.)
 
 ## Known Issues / Notes
 
-First startup may recreate schema via Hibernate
-SQLite requires careful handling of:
-dates (LocalDate → String conversion)
-unique constraints (INSERT OR IGNORE used in seed data)
-spring.jpa.hibernate.ddl-auto=update is used for development only
+- First startup may recreate schema via Hibernate
+- SQLite requires careful handling of:
+ - dates (LocalDate → String conversion)
+ - unique constraints (INSERT OR IGNORE used in seed data)
+ - spring.jpa.hibernate.ddl-auto=update is used for development only
